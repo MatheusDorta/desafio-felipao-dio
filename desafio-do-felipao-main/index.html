@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Classificador de Nível de Herói">
+    <meta name="author" content="Benih">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Inter:wght@200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title" class="align-center">CLASSIFICADOR DE NÍVEL DE HERÓI</h1>
+    </header>
+        <h2>Um dragão vermelho adulto está atacando seu vilarejo!<br>
+        Para salvar a vila você tem a sua disposição guerreiros do mesmo nível que o seu.<br>
+        Quantos guerreiros serão necessários? Vamos calcular:</h2>
+    <form id="userdata" onsubmit="return false;">
+        <div class="form-divs">
+            <label id="name-label" for="heroname">Nome do herói</label>
+            <input type="text" id="heroname" name="heroname" class="form-input" placeholder="Insira um nome" required>
+        </div>
+        <div class="form-divs">
+            <label id="xp-label" for="heroxp">Experiência do herói</label>
+            <input type="number" id="heroxp" name="heroxp" class="form-input" placeholder="xp" required>
+        </div>
+        <div class="form-divs">
+            <button type="submit" id="submit" class="submit-button" onclick="determineNivel()">CALCULAR</button>
+
+        </div>
+    </form>
+
+    <div id="return-content">
+        <div id="result"></div>
+        <div id="battle"></div>
+    </div>
+    <script src="./resources/javascript/app.js"></script>
+</body>
